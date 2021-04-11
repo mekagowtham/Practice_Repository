@@ -1,7 +1,5 @@
 class CiscoWeatherService {
-	double getWeatherInfo(long zip)
-	{
-
+	double getWeatherInfo(long zip
 		return 50.8;
 
 	}
