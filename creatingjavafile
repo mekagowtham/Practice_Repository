@@ -1,0 +1,45 @@
+class CiscoWeatherService {
+	double getWeatherInfo(long zip)
+	{
+
+		return 50.8;
+
+	}
+
+}
+interface WeatherInfo
+{
+	double getWeatherInfo(long zip);
+}
+
+
+
+class CiscoWeatherInfoImpl implements WeatherInfo { 
+	private CiscoWeatherService ciscoWeatherService;
+	public double getWeatherInfo(long zip) 
+	{ 
+		ciscoWeatherService=new CiscoWeatherService();
+		long temp=(long)ciscoWeatherService.getWeatherInfo(zip);
+
+		return temp;
+
+	}
+
+
+}
+
+
+class DelinkCiscoWeatherInfoImpl implements WeatherInfo { 
+	private CiscoWeatherService ciscoWeatherService;
+	public double getWeatherInfo(long zip) 
+	{ 
+		ciscoWeatherService=new CiscoWeatherService();
+		double temp=ciscoWeatherService.getWeatherInfo(zip);
+	
+System.out.println("delink");
+		return temp;
+
+	}
+
+
+}
