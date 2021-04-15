@@ -36,6 +36,9 @@ class DelinkCiscoWeatherInfoImpl implements WeatherInfo {
 	
 System.out.println("delink");
 		return temp;
+System.out.println("delink");
+                return temp;
+
 
 	}
 
